@@ -68,7 +68,7 @@ const emailRoutes = require("./routes/emailRoutes");
 const authRoutes = require("./routes/authRoutes");
 
 app.use(cors({
-  origin: "http://localhost:5173", // Allow frontend URL
+  origin: "https://tranquil-starship-d82cd2.netlify.app", // Allow frontend URL
   credentials: true  // Allow cookies & authentication headers
 }));
 // // CORS configuration - apply before any routes
