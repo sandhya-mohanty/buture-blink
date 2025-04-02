@@ -91,7 +91,9 @@ app.use(express.urlencoded({ extended: true }));
 // Routes
 app.use("/email", emailRoutes);
 app.use("/user", authRoutes);
-
+app.get("/",(req,res)=>{
+  res.json({message:"hellow world backend"})
+})
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
